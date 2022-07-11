@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Android Interaction</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/Android_Interaction.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Android_Interaction.data",
+        frameworkUrl: "Build/Android_Interaction.framework.js",
+        codeUrl: "Build/Android_Interaction.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Consiliaris Digital Systems",
+        productName: "Android Interaction",
+        productVersion: "0.3",
+      });
+    </script>
+  </body>
+</html>
